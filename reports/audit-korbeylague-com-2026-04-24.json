@@ -1,0 +1,217 @@
+{
+  "version": "1.0",
+  "domain": "korbeylague.com",
+  "site_name": "Korbey Lague",
+  "url": "https://www.korbeylague.com",
+  "audit_date": "2026-04-24",
+  "max_pages": 10,
+  "pages_crawled": 10,
+  "crawl_errors": 0,
+  "overall_score": 55,
+  "overall_grade": "F",
+  "scores": {
+    "technical": 60,
+    "performance": null,
+    "onpage_seo": 65,
+    "content": 16,
+    "indexability": 78,
+    "schema": 25,
+    "ai_llm": 64,
+    "ux": 77,
+    "analytics": 56
+  },
+  "findings": {
+    "technical": {
+      "ssl_valid": true,
+      "ssl_expiry_days": 27,
+      "ssl_error": null,
+      "robots_present": false,
+      "mixed_content_pages": 0,
+      "redirect_chain_pages": 0,
+      "broken_links": 0,
+      "avg_security_headers": 0.0,
+      "security_headers_sample": {
+        "content-security-policy": false,
+        "x-frame-options": false,
+        "x-content-type-options": false,
+        "referrer-policy": false,
+        "permissions-policy": false
+      }
+    },
+    "performance": {
+      "error": "PageSpeed API unavailable"
+    },
+    "onpage_seo": {
+      "pct_has_title": 100,
+      "pct_title_len_ok": 20,
+      "pct_unique_titles": 80,
+      "pct_has_meta": 100,
+      "pct_meta_len_ok": 0,
+      "pct_one_h1": 90,
+      "pct_no_heading_skip": 100,
+      "pct_alt_text_ok": 0,
+      "pct_og_complete": 100,
+      "pct_tw_card": 100,
+      "pct_clean_url": 100,
+      "pages_missing_title": []
+    },
+    "content": {
+      "pct_adequate_words": 60,
+      "avg_reading_grade": 16.4,
+      "pct_readable": 25,
+      "pct_has_cta": 20,
+      "pct_has_trust_signals": 20,
+      "homepage_has_contact": true,
+      "duplicate_title_pages": 2
+    },
+    "indexability": {
+      "sitemap_found": true,
+      "sitemap_url": "https://www.korbeylague.com/sitemap.xml",
+      "sitemap_url_count": 134,
+      "sitemap_in_robots": false,
+      "pages_with_noindex": 0,
+      "google_index_count": "unverified",
+      "crawled_pages": 10
+    },
+    "schema": {
+      "types_found": [
+        "AccountingService"
+      ],
+      "has_organization": false,
+      "has_website": false,
+      "has_breadcrumb": false,
+      "has_local_business": false,
+      "has_article": false,
+      "has_faq": false,
+      "has_product": false,
+      "all_json_valid": true,
+      "pct_pages_with_schema": 20
+    },
+    "ai_llm": {
+      "llms_txt_present": true,
+      "llms_txt_url": "https://www.korbeylague.com/llms.txt",
+      "ai_crawlers_blocked": [],
+      "ai_crawlers_allowed": [],
+      "has_faq_schema": false,
+      "has_about_content": false,
+      "contact_info_in_text": true
+    },
+    "ux": {
+      "pct_has_viewport": 100,
+      "pct_buttons_accessible": 100,
+      "pct_form_labels_ok": 100,
+      "pct_skip_nav": 0,
+      "has_custom_404": false
+    },
+    "analytics": {
+      "has_ga4": true,
+      "has_gtm": false,
+      "has_meta_pixel": false,
+      "has_linkedin_pixel": false,
+      "has_heatmap_tool": false,
+      "ga4_page_coverage": 10
+    }
+  },
+  "recommendations": [
+    {
+      "priority": "critical",
+      "category": "Schema",
+      "title": "Add Organization Schema",
+      "detail": "No Organization schema found. This is the baseline schema every business site needs \u2014 it tells Google who you are.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Technical",
+      "title": "Renew SSL Certificate Soon",
+      "detail": "Certificate expires in 27 days.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Technical",
+      "title": "Add robots.txt",
+      "detail": "No robots.txt found. Add one to guide crawlers and reference your sitemap.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "On-Page SEO",
+      "title": "Fix Missing Image Alt Text",
+      "detail": "Only 0% of pages have all images tagged with alt text. This hurts accessibility and image SEO.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Content",
+      "title": "Fix Duplicate Page Titles",
+      "detail": "2 pages share a title with another page. Unique titles are required for SEO.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Indexability",
+      "title": "Reference Sitemap in robots.txt",
+      "detail": "Add 'Sitemap: https://domain.com/sitemap.xml' to robots.txt so all crawlers find it.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Schema",
+      "title": "Add WebSite Schema",
+      "detail": "Add WebSite schema with a SearchAction to enable sitelinks search in Google.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Schema",
+      "title": "Add BreadcrumbList Schema",
+      "detail": "Breadcrumb schema on interior pages enables richer search result listings.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "UX",
+      "title": "Create a Custom 404 Page",
+      "detail": "The 404 page appears to be missing or minimal. A helpful 404 page with navigation reduces bounce rate.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Analytics",
+      "title": "Install Google Tag Manager",
+      "detail": "GA4 is present but GTM is not. GTM makes it easier to manage and add tags without developer involvement.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Analytics",
+      "title": "Install Meta Pixel",
+      "detail": "No Facebook/Meta Pixel detected. Required for retargeting ads and tracking conversions from Meta campaigns.",
+      "effort": "Low"
+    },
+    {
+      "priority": "warning",
+      "category": "Technical",
+      "title": "Add Security Headers",
+      "detail": "Only 0/5 security headers set. Add Content-Security-Policy, X-Frame-Options, and X-Content-Type-Options at minimum.",
+      "effort": "Medium"
+    },
+    {
+      "priority": "warning",
+      "category": "Content",
+      "title": "Add Calls to Action",
+      "detail": "Only 20% of pages have a clear CTA. Every page should guide users to a next step.",
+      "effort": "Medium"
+    },
+    {
+      "priority": "warning",
+      "category": "Content",
+      "title": "Expand Thin Content",
+      "detail": "Only 60% of pages have 300+ words. Thin content ranks poorly and doesn't convert.",
+      "effort": "High"
+    }
+  ],
+  "logo_dark_path": "/sessions/zealous-awesome-knuth/mnt/CountingFive-Site-Audit/assets/CountingFive-Logo-040125.png",
+  "logo_rev_path": "/sessions/zealous-awesome-knuth/mnt/CountingFive-Site-Audit/assets/CountingFive-Logo-revers.png"
+}

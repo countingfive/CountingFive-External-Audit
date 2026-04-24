@@ -1,0 +1,4 @@
+.DS_Store
+
+# Config contains live API keys — copy config.example.json → config.json and fill in your keys
+site-audit-skill/config.json

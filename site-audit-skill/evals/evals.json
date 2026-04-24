@@ -1,0 +1,90 @@
+{
+  "skill_name": "site-audit",
+  "description": "CountingFive website audit skill — generates branded PDF and Markdown reports",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Can you run a site audit on https://www.example-cpafirm.com? We have a sales call with them next week and I want to show them what we found.",
+      "expected_output": "A branded PDF report and Markdown file saved to the workspace pdf/ and md/ folders. The PDF should have a cover page, executive summary with scorecard, 7 graded sections with sub-scores and narrative, and a recommendations page. Both files should follow the naming convention audit-[domain]-[date].",
+      "files": [],
+      "assertions": [
+        {
+          "text": "PDF file is created in the pdf/ output directory",
+          "type": "file_exists"
+        },
+        {
+          "text": "Markdown file is created in the md/ output directory",
+          "type": "file_exists"
+        },
+        {
+          "text": "PDF contains all 7 audit sections (mobile, speed, SEO, target market, competitive, tech stack, site health)",
+          "type": "content_check"
+        },
+        {
+          "text": "Each section has a letter grade (A through F scale)",
+          "type": "content_check"
+        },
+        {
+          "text": "Each section has numeric sub-scores in X/10 format",
+          "type": "content_check"
+        },
+        {
+          "text": "Report has a Recommendations section mapping findings to CountingFive services",
+          "type": "content_check"
+        },
+        {
+          "text": "CountingFive logo appears on the cover page",
+          "type": "content_check"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Audit this site for me: https://www.quickbooksaccounting.net — I want to see how their SEO looks and whether their site is competitive.",
+      "expected_output": "Same output as eval 1. SEO/AIO/GEO section should be particularly detailed since the user specifically asked about SEO. Competitive Search Visibility section should show keyword ranking data.",
+      "files": [],
+      "assertions": [
+        {
+          "text": "PDF file generated successfully",
+          "type": "file_exists"
+        },
+        {
+          "text": "SEO / AIO / GEO Health section contains sub-scores for title tags, heading structure, schema markup, and sitemap",
+          "type": "content_check"
+        },
+        {
+          "text": "Competitive Search Visibility section contains keyword ranking data",
+          "type": "content_check"
+        },
+        {
+          "text": "Narrative in each section explains findings in plain language without jargon",
+          "type": "qualitative"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Check this prospect's website and tell me if it's worth pursuing: https://www.greenleaftax.com",
+      "expected_output": "Full audit report generated. The 'worth pursuing' framing should be addressed — the recommendations section should frame findings in terms of opportunity for CountingFive (worse site = bigger opportunity). The user should get both files plus a brief in-chat summary with top 3 findings.",
+      "files": [],
+      "assertions": [
+        {
+          "text": "Both PDF and Markdown files are generated",
+          "type": "file_exists"
+        },
+        {
+          "text": "In-chat response includes overall grade and top 3 findings as a brief summary",
+          "type": "content_check"
+        },
+        {
+          "text": "Recommendations section contains at least 3 recommendations",
+          "type": "content_check"
+        },
+        {
+          "text": "Each recommendation includes a CountingFive service mapping",
+          "type": "content_check"
+        }
+      ]
+    }
+  ]
+}

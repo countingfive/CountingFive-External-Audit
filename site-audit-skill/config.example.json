@@ -1,0 +1,55 @@
+{
+  "_comment": "CountingFive Site Audit Skill \u2014 Configuration File. Fill in all API keys before running audits.",
+  "firm": {
+    "name": "CountingFive",
+    "tagline": "Turning Accounting Expertise Into Online Authority",
+    "url": "https://countingfive.com",
+    "logo_path": "assets/CountingFive-Logo-040125.png",
+    "logo_path_reversed": "assets/CountingFive-Logo-revers.png",
+    "contact_email": "",
+    "contact_phone": "",
+    "contact_website": "https://countingfive.com"
+  },
+  "brand": {
+    "primary_color_hex": "#1B3A6B",
+    "accent_color_hex": "#00AEDB",
+    "text_dark_hex": "#333333",
+    "text_body_hex": "#666666",
+    "background_hex": "#FFFFFF",
+    "light_bg_hex": "#F5F8FC",
+    "font_family": "Open Sans",
+    "font_url": "https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+  },
+  "target_industry": {
+    "primary_keywords": [
+      "CPA firm",
+      "accounting firm",
+      "tax firm",
+      "bookkeeping services",
+      "tax accountant",
+      "enrolled agent",
+      "tax preparation",
+      "small business accounting"
+    ],
+    "location_modifier": "Middleville MI"
+  },
+  "apis": {
+    "firecrawl_api_key": "YOUR_FIRECRAWL_API_KEY",
+    "google_pagespeed_api_key": "YOUR_GOOGLE_PAGESPEED_API_KEY",
+    "serper_api_key": "YOUR_SERPER_API_KEY",
+    "whois_api_key": "YOUR_WHOIS_API_KEY",
+    "builtwith_api_key": "YOUR_BUILTWITH_API_KEY"
+  },
+  "audit_settings": {
+    "firecrawl_page_limit": 15,
+    "google_search_results_per_keyword": 10,
+    "target_keywords_to_check": 5,
+    "crawl_timeout_seconds": 60
+  },
+  "output": {
+    "html_dir": "reports/",
+    "md_dir": "md/",
+    "filename_prefix": "audit",
+    "workspace_base": "/path/to/your/CountingFive-Site-Audit"
+  }
+}
